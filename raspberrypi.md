@@ -15,3 +15,13 @@
 
 <https://help.github.com/articles/generating-ssh-keys>
 
+## NodeJS
+
+Add an apt source for sid to get latest versions of NodeJS, ex:
+    echo deb ftp://ftp.uk.debian.org/debian/ sid main >> /etc/apt/sources.list.d/sid.list
+Be careful as it means that future upgrades will bring a lot of packages from sid.
+
+And then simply:
+    sudo apt-get update
+    sudo apt-get install nodejs npm
+
