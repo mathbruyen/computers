@@ -1,5 +1,10 @@
 # Raspberry PI
 
+## System
+
+Follow instructions on [elinux](http://elinux.org/RPi_Easy_Card_Setup) with Debian Squeeze. If it
+does not work, check [elinux](http://elinux.org/R-Pi_Troubleshooting). In particular replacing
+`bootcode.bin` file by one provided on the page may help depending on the SD card.
 
 ## Git
 
