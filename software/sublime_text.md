@@ -4,6 +4,18 @@
 
 From [official website](http://www.sublimetext.com/).
 
+## Preferences
+
+```json
+{
+	"color_scheme": "Packages/Color Scheme - Default/Espresso Libre.tmTheme"
+	,"draw_white_space": "all"
+}
+```
+
+* Espresso Libre color scheme
+* always show white spaces
+
 ## Plugins
 
 ### Package manager
