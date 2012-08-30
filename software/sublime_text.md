@@ -31,7 +31,15 @@ Follow instructions on [official website](http://wbond.net/sublime_packages/pack
 ### Sublime Linter
 
 * [source repository](https://github.com/SublimeLinter/SublimeLinter)
-* installed with package manager: `Package Control: Install Package` then `SublimeLinter` and finally restart
+* installed with package manager: `Package Control: Install Package` then `Pandoc (Markdown)` and finally restart
+
+### Sublime Pandoc
+
+* [source repository](https://github.com/jclement/SublimePandoc)
+* used because it supports ```` ```language``` ```` syntax
+* requires [Pandoc](http://johnmacfarlane.net/pandoc/) preinstalled
+* installed with package manager: `Package Control: Install Package` then `ZenCoding` and finally restart
+* `CTRL + ALT + r` to comile and preview in the browser, `CTRL + ALT + SHIFT + r` to compile in place
 
 ### Alignment
 
