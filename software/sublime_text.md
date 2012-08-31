@@ -10,11 +10,14 @@ From [official website](http://www.sublimetext.com/).
 {
 	"color_scheme": "Packages/Color Scheme - Default/Espresso Libre.tmTheme"
 	,"draw_white_space": "all"
+  ,"tab_size": 2
+  ,"translate_tabs_to_spaces": true
 }
 ```
 
 * Espresso Libre color scheme
 * always show white spaces
+* use two spaces as indentation
 
 ## Plugins
 
