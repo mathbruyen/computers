@@ -9,9 +9,10 @@ From [official website](http://www.sublimetext.com/).
 ```json
 {
   "color_scheme": "Packages/Color Scheme - Default/Espresso Libre.tmTheme"
-	,"draw_white_space": "all"
+  ,"draw_white_space": "all"
   ,"tab_size": 2
   ,"translate_tabs_to_spaces": true
+  ,"default_line_ending": "unix"
 }
 ```
 
