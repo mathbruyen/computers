@@ -52,3 +52,9 @@ Follow instructions on [official website](http://wbond.net/sublime_packages/pack
 * requires [Pandoc](http://johnmacfarlane.net/pandoc/) preinstalled
 * installed with package manager: `Package Control: Install Package` then `Pandoc (Markdown)` and finally restart
 * `CTRL + ALT + r` to comile and preview in the browser, `CTRL + ALT + SHIFT + r` to compile in place
+
+### Grunt
+
+* [source repository](https://github.com/tvooo/sublime-grunt)
+* installed with package manager: `Package Control: Install Package` then `Grunt` and finally restart
+* requires a directory containing `grunt.js` added to Sublime: `CTRL + MAJ + P` then `Grunt`, and finally choose the requested task
