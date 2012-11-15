@@ -37,10 +37,7 @@ Follow instructions on [official website](http://wbond.net/sublime_packages/pack
 #### Emmet (only tested on Windows for now)
 
 * [github repository](https://github.com/sergeche/emmet-sublime)
-* installed with package manager:
-** `Package Control: Add Repository` then `https://github.com/sergeche/emmet-sublime`
-** `Package Control: Install Package` then `emmet-sublime`
-** restart
+* installed with package manager: `Package Control: Add Repository` then `https://github.com/sergeche/emmet-sublime`, `Package Control: Install Package` then `emmet-sublime`, restart
 * `CTRL + ALT + ENTER` and then type in the expression to expand
 
 ### Sublime Linter
@@ -51,14 +48,7 @@ Follow instructions on [official website](http://wbond.net/sublime_packages/pack
 ### Sublime Pandoc
 
 * [source repository](https://github.com/jclement/SublimePandoc)
-* used because it supports ```` ```language``` ```` syntax
+* used because it supports ```` ```language ```` syntax
 * requires [Pandoc](http://johnmacfarlane.net/pandoc/) preinstalled
 * installed with package manager: `Package Control: Install Package` then `Pandoc (Markdown)` and finally restart
 * `CTRL + ALT + r` to comile and preview in the browser, `CTRL + ALT + SHIFT + r` to compile in place
-
-### Alignment
-
-* [source repository](https://github.com/wbond/sublime_alignment)
-* [documentation page](http://wbond.net/sublime_packages/alignment)
-* installed with package manager: `Package Control: Install Package` then `Alignment` and finally restart
-* `CTRL + ALT + a` to fix indentation and align `=` on a multiligne selection
