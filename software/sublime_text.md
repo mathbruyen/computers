@@ -26,19 +26,11 @@ From [official website](http://www.sublimetext.com/).
 
 Follow instructions on [official website](http://wbond.net/sublime_packages/package_control), commands starts with `Package Control:` ([source](http://wbond.net/sublime_packages/package_control/usage)).
 
-### Zen coding
-
-#### Zen Coding
-
-* [official website](http://code.google.com/p/zen-coding/)
-* installed with package manager: `Package Control: Install Package` then `ZenCoding` and finally restart
-* `CTRL + space` to expand expressions in HTML, XML, ... files ([source](http://stackoverflow.com/questions/8639088/how-do-i-activate-the-zen-coding-key-bindings-in-sublime-text-2))
-
-#### Emmet (only tested on Windows for now)
+### Emmet (ex Zen Coding)
 
 * [github repository](https://github.com/sergeche/emmet-sublime)
-* installed with package manager: `Package Control: Add Repository` then `https://github.com/sergeche/emmet-sublime`, `Package Control: Install Package` then `emmet-sublime`, restart
-* `CTRL + ALT + ENTER` and then type in the expression to expand
+* installed with package manager: `Package Control: Install Package` then `Emmet`, restart
+* type expression and type `CTRL + E` to expand
 
 ### Sublime Linter
 
