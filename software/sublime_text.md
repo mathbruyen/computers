@@ -50,3 +50,11 @@ Follow instructions on [official website](http://wbond.net/sublime_packages/pack
 * [source repository](https://github.com/tvooo/sublime-grunt)
 * installed with package manager: `Package Control: Install Package` then `Grunt` and finally restart
 * requires a directory containing `grunt.js` added to Sublime: `CTRL + MAJ + P` then `Grunt`, and finally choose the requested task
+
+### ReadonlyWritable
+
+Mainly for dealing with ClearCase...
+
+* [source repository](https://github.com/pyzhangxiang/sublimetext-2-readonly-writable)
+* installed with package manager: `Package Control: Install Package` then `ReadonlyWritable` and finally restart
+* adds `Set Readonly` and `Set Writable` contextual menu entries when right-clicking in the editor or in the folders panel of the side bar
