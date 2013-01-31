@@ -2,11 +2,19 @@
 
 Debian Squeeze (6.0.6)
 
-## APT software
+## APT software
 
-`apt-get install git build-essential`
+`apt-get install build-essential`
+
+## Git
+
+`apt-get install git`
+
+Relies on dotfile `.gitconfig`.
 
 ## Ruby
+
+`apt-get install libssl-dev`
 
 With [rbenv](https://github.com/sstephenson/rbenv/):
 ```
@@ -19,6 +27,5 @@ Also relies on content in `.bashrc`.
 
 ## Dotfiles
 
-* `.gitconfig`
 * `.bashrc`
 * `.bash_profile`
