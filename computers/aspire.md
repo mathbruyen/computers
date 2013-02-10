@@ -1,6 +1,6 @@
 # Aspire
 
-Debian Squeeze (6.0.6)
+Debian unstable (Sid)
 
 ## General
 
