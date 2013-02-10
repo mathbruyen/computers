@@ -4,7 +4,7 @@ Debian unstable (Sid)
 
 ## General
 
-`apt-get install build-essential`
+`apt-get install kde-standard yakuake build-essential`
 
 Dotfiles:
 * `.bashrc`
