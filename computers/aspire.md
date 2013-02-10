@@ -10,11 +10,24 @@ Dotfiles:
 * `.bashrc`
 * `.bash_profile`
 
+## Firefox/Iceweasel aurora
+
+[Source](http://mozilla.debian.net/)
+
+```
+apt-get install pkg-mozilla-archive-keyring
+echo "deb http://mozilla.debian.net/ experimental iceweasel-aurora" > /etc/apt/sources.list.d/mozilla.list
+apt-get update
+apt-get install -t experimental iceweasel
+``` 
+
+and setup Sync.
+
 ## SSH
 
 `apt-get install ssh` with `.ssh/config` dotfile. Generate keys with `ssh-keygen -t rsa`.
 
-## Heroku
+## Heroku
 
 [Toolbelt](https://toolbelt.heroku.com/) with identity file `id_heroku`.
 
@@ -24,7 +37,7 @@ Dotfiles:
 
 Relies on dotfile `.gitconfig`.
 
-## Ruby
+## Ruby
 
 `apt-get install libssl-dev libreadline-dev`
 
@@ -36,5 +49,3 @@ rbenv install 1.9.3-pXXX
 rbenv rehash
 ```
 Also relies on content in `.bashrc`.
-
-
