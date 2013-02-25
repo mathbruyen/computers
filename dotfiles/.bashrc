@@ -112,3 +112,6 @@ fi
 # enable rbenv
 export PATH="~/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# enable nvm
+source ~/nvm/nvm.sh
