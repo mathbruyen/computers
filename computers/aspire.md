@@ -1,10 +1,10 @@
-# Aspire
+# Aspire
 
 Debian unstable (Sid)
 
-## General
+## General
 
-`apt-get install build-essential curl`
+`apt-get install kde-standard yakuake build-essential curl`
 
 Dotfiles:
 * `.bashrc`
