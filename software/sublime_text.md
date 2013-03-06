@@ -51,6 +51,11 @@ Follow instructions on [official website](http://wbond.net/sublime_packages/pack
 * installed with package manager: `Package Control: Install Package` then `Grunt` and finally restart
 * requires a directory containing `grunt.js` added to Sublime: `CTRL + MAJ + P` then `Grunt`, and finally choose the requested task
 
+### Git Gutter
+
+* [source repository](https://github.com/jisaacks/GitGutter)
+* installed with package manager: `Package Control: Install Package` then `GitGutter` and finally restart
+
 ### ReadonlyWritable
 
 Mainly for dealing with ClearCase...
