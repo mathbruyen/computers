@@ -115,3 +115,6 @@ eval "$(rbenv init -)"
 
 # enable nvm
 source ~/nvm/nvm.sh
+
+# enable custom software
+export PATH="$PATH:~/software/bin"

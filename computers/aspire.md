@@ -31,6 +31,10 @@ and setup Sync.
 
 [Toolbelt](https://toolbelt.heroku.com/) with identity file `id_heroku`.
 
+## Sublime Text
+
+Extract Linux-64 archive from [official website](http://www.sublimetext.com/) in `~/software/Sublime Text 2`, link `sublime_text` in `~/software/bin` (added to PATH in dotfile `.bashrc`) and link dotfiles from `.config/sublime-text-2`. Plugins listed at `.config/sublime-text-2/README.md`.
+
 ## Git
 
 `apt-get install git`

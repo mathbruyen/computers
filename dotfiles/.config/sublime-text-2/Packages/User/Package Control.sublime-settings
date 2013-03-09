@@ -1,0 +1,10 @@
+{
+	"installed_packages":
+	[
+		"Emmet",
+		"Grunt",
+		"Pandoc (Markdown)",
+		"ReadonlyWritable",
+		"SublimeLinter"
+	]
+}
