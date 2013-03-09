@@ -1,3 +1,4 @@
 *.sublime_session
 *.pyc
 dotfiles/.config/sublime-text-2/Packages/Default/Startup.cache
+dotfiles/.config/sublime-text-2/Packages/User/Package Control.last-run
