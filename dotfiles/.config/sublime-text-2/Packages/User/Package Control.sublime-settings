@@ -3,6 +3,7 @@
 	[
 		"Emmet",
 		"Grunt",
+		"Package Control",
 		"Pandoc (Markdown)",
 		"ReadonlyWritable",
 		"SublimeLinter"
