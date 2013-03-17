@@ -113,8 +113,9 @@ fi
 export PATH="~/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# enable nvm
+# enable nvm and add npm binaries to the path
 source ~/nvm/nvm.sh
+export PATH="$PATH:node_modules/.bin"
 
 # enable custom software
 export PATH="$PATH:~/software/bin"
