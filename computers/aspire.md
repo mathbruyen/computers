@@ -62,3 +62,21 @@ nvm install 0.10.0
 nvm alias default 0.10
 ```
 Also relies on content in `.bashrc`.
+
+## OpenSCAD
+
+[Built from source](http://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Building_on_Linux/UNIX):
+```
+git clone https://github.com/openscad/openscad.git
+cd openscad
+git submodule init
+git submodule update
+sudo
+apt-get install libqt4-dev libqt4-opengl-dev libxmu-dev cmake bison flex git-core libboost-all-dev libXi-dev libmpfr-dev libboost-dev libglew-dev libeigen2-dev libeigen3-dev libcgal-dev libopencsg-dev libgmp3-dev libgmp-dev python-paramiko
+exit
+./scripts/check-dependencies.sh
+qmake-qt4
+make
+```
+
+[Website](http://www.openscad.org/) and [language reference](http://en.wikibooks.org/wiki/OpenSCAD_User_Manual/The_OpenSCAD_Language).
