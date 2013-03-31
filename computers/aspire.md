@@ -79,4 +79,6 @@ qmake-qt4
 make
 ```
 
+And in `~/software/bin`, `ln -s ~/dev/openscad/openscad`.
+
 [Website](http://www.openscad.org/) and [language reference](http://en.wikibooks.org/wiki/OpenSCAD_User_Manual/The_OpenSCAD_Language).
