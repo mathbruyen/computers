@@ -48,6 +48,11 @@ Configuration items:
 * DB_PASS
 * SELF_URL_PATH
 
+Add cron task `cronta -u www-data -e`.
+```
+*/30 * * * * cd /var/www/TinyTinyRss && /usr/bin/php /var/www/TinyTinyRss/update.php --feeds >/dev/null 2>&1
+```
+
 ### Postgre
 
 ```
