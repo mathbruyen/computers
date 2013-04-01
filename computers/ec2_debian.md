@@ -52,8 +52,8 @@ Configuration items:
 
 ```
 adduser tinytinyrss
-su - postgres
-pgsql
+su postgres
+psql
 > CREATE USER tinytinyrss WITH PASSWORD 'TinyTinyRss';
 > CREATE DATABASE tinytinyrss OWNER tinytinyrss;
 exit
