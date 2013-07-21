@@ -33,7 +33,7 @@ and setup Sync.
 
 ## Sublime Text
 
-Extract Linux-64 archive from [official website](http://www.sublimetext.com/) in `~/software/Sublime Text 2`, link `sublime_text` in `~/software/bin` (added to PATH in dotfile `.bashrc`) and link dotfiles from `.config/sublime-text-2`. Plugins listed at `.config/sublime-text-2/README.md`.
+Extract Linux-64 archive from [official website](http://www.sublimetext.com/) in `~/software/sublime_text_3`, link `sublime_text` in `~/software/bin` (added to PATH in dotfile `.bashrc`) and link dotfiles from `.config/sublime-text-3`. Plugins listed at `.config/sublime-text-3/README.md`.
 
 ## Git
 
@@ -78,5 +78,7 @@ exit
 qmake-qt4
 make
 ```
+
+And in `~/software/bin`, `ln -s ~/dev/openscad/openscad`.
 
 [Website](http://www.openscad.org/) and [language reference](http://en.wikibooks.org/wiki/OpenSCAD_User_Manual/The_OpenSCAD_Language).
