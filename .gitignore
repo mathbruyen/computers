@@ -1,5 +1,9 @@
 *.sublime_session
 *.pyc
-dotfiles/.config/sublime-text-2/Packages/Default/Startup.cache
-dotfiles/.config/sublime-text-2/Packages/User/Package Control.last-run
-dotfiles/.config/sublime-text-2/Backup
+dotfiles/.config/sublime-text-3/Packages/Default/Startup.cache
+dotfiles/.config/sublime-text-3/Packages/User/Package Control.last-run
+dotfiles/.config/sublime-text-3/Backup
+dotfiles/.config/sublime-text-3/Cache
+dotfiles/.config/sublime-text-3/Index
+dotfiles/.config/sublime-text-3/Local
+dotfiles/.config/sublime-text-3/Packages/User/Package Control.cache
