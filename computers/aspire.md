@@ -10,6 +10,14 @@ Dotfiles:
 * `.bashrc`
 * `.bash_profile`
 
+## Maven
+
+Install OpenJDK with `sudo apt-get install openjdk-7-jdk`.
+
+Download maven binary from official website and expand in `~/software`.
+
+Relies on dotfile `.bashrc`.
+
 ## Firefox/Iceweasel aurora
 
 [Source](http://mozilla.debian.net/)

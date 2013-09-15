@@ -117,5 +117,11 @@ eval "$(rbenv init -)"
 source ~/nvm/nvm.sh
 export PATH="$PATH:node_modules/.bin"
 
+# Maven
+export M2_HOME="$(readlink -f ~)/software/apache-maven-3.1.0"
+export M2="$M2_HOME/bin"
+export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
+export PATH="$PATH:$M2"
+
 # enable custom software
 export PATH="$PATH:~/software/bin"
