@@ -4,7 +4,7 @@
 
 ### Package manager
 
-Installed via [git submodule](http://wbond.net/sublime_packages/package_control), commands starts with `Package Control:` ([source](http://wbond.net/sublime_packages/package_control/usage)).
+Installed via [standard install](https://sublime.wbond.net/installation), commands starts with `Package Control:` ([source](https://sublime.wbond.net/docs/usage)).
 
 ### Emmet (ex Zen Coding)
 
