@@ -1,6 +1,14 @@
 # Aspire
 
-Debian unstable (Sid)
+Debian unstable (Wheezy) amd64.
+
+## Sudo
+
+As root:
+```
+adduser mathieu sudo
+```
+then reboot.
 
 ## General
 
