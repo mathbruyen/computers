@@ -1,6 +1,6 @@
 # AspireOne
 
-Debian unstable (Wheezy)
+Debian unstable (Wheezy) i386.
 
 ## General
 
