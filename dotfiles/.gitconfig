@@ -3,3 +3,5 @@
 [user]
 	name = Mathieu Bruyen
 	email = code@mais-h.eu
+[push]
+	default = simple
