@@ -73,8 +73,9 @@ Also relies on content in `.bashrc`.
 With [nvm](https://github.com/creationix/nvm):
 ```
 git clone git://github.com/creationix/nvm.git ~/nvm
-nvm install 0.10.0
-nvm alias default 0.10
+source ~/.bashrc
+nvm install 0.11
+nvm alias default 0.11
 ```
 Also relies on content in `.bashrc`.
 
