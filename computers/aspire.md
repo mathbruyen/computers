@@ -16,7 +16,6 @@ then reboot.
 
 Dotfiles:
 * `.bashrc`
-* `.bash_profile`
 
 ## Maven
 
