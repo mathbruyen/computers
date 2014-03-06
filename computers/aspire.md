@@ -20,7 +20,7 @@ Dotfiles:
 
 Install OpenJDK with `sudo apt-get install openjdk-7-jdk`.
 
-Download maven binary from official website and expand in `~/software`.
+Download maven binary from [official website](http://maven.apache.org/download.cgi) and expand in `~/software`.
 
 Relies on dotfile `.bashrc`.
 
