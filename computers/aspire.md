@@ -6,6 +6,7 @@ Debian unstable (Wheezy) amd64.
 
 As root:
 ```
+apt-get install sudo
 adduser mathieu sudo
 ```
 then reboot.
@@ -48,7 +49,7 @@ and setup Sync.
 
 ## Sublime Text
 
-Extract Linux-64 archive from [official website](http://www.sublimetext.com/) in `~/software/sublime_text_3`, link `sublime_text` in `~/software/bin` (added to PATH in dotfile `.bashrc`) and link dotfiles from `.config/sublime-text-3`. Plugins listed at `.config/sublime-text-3/README.md`.
+Extract Linux-64 archive from [official website](http://www.sublimetext.com/3) in `~/software/sublime_text_3`, link `sublime_text` in `~/software/bin` (added to PATH in dotfile `.bashrc`) and link dotfiles from `.config/sublime-text-3`. Plugins listed at `.config/sublime-text-3/README.md`.
 
 ## Git
 
