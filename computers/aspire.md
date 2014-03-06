@@ -1,6 +1,6 @@
 # Aspire
 
-Debian Wheezy amd64.
+Debian Jessie amd64.
 
 ## General
 
@@ -28,11 +28,17 @@ Relies on dotfile `.bashrc`.
 
 [Source](http://mozilla.debian.net/)
 
+Set `/etc/apt/sources.list.d/mozilla.list` to
+```
+deb http://cdn.debian.net/debian unstable main
+deb http://mozilla.debian.net/ experimental iceweasel-aurora
+```
+and run
 ```
 apt-get install pkg-mozilla-archive-keyring
-echo "deb http://mozilla.debian.net/ wheezy-backports iceweasel-aurora" > /etc/apt/sources.list.d/mozilla.list
 apt-get update
-apt-get install -t wheezy-backports iceweasel
+apt-get upgrade
+apt-get install -t experimental iceweasel
 ``` 
 
 and setup Sync.
