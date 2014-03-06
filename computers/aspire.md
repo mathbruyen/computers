@@ -2,7 +2,7 @@
 
 Debian unstable (Wheezy) amd64.
 
-## Sudo
+## General
 
 As root:
 ```
@@ -10,8 +10,6 @@ apt-get install sudo
 adduser mathieu sudo
 ```
 then reboot.
-
-## General
 
 `apt-get install kde-standard yakuake build-essential curl`
 
