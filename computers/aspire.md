@@ -68,7 +68,7 @@ With [rbenv](https://github.com/sstephenson/rbenv/):
 apt-get install libssl-dev libreadline-dev
 git clone https://github.com/sstephenson/rbenv.git .rbenv
 git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-rbenv install 1.9.3-pXXX
+rbenv install 2.0.0-p451
 rbenv rehash
 ```
 Also relies on content in `.bashrc`.
