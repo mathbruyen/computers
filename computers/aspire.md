@@ -49,10 +49,6 @@ and setup Sync.
 
 `apt-get install ssh` with `.ssh/config` dotfile. Generate keys with `ssh-keygen -t rsa`.
 
-## Heroku
-
-[Toolbelt](https://toolbelt.heroku.com/) with identity file `id_heroku`.
-
 ## Sublime Text
 
 Extract Linux-64 archive from [official website](http://www.sublimetext.com/3) in `~/software/sublime_text_3`, link `sublime_text` in `~/software/bin` (added to PATH in dotfile `.bashrc`) and link dotfiles from `.config/sublime-text-3`. Plugins listed at `.config/sublime-text-3/README.md`.
@@ -72,6 +68,7 @@ git clone https://github.com/sstephenson/rbenv.git .rbenv
 git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 curl -fsSL https://github.com/ruby/ruby/commit/1e7a929c1d44d7a368fbe379211183ac6c972920.patch | filterdiff --strip=1 -i a/ext/openssl/ossl_ssl.c | rbenv install -p 1.9.3-p484
 rbenv rehash
+rbenv global 1.9.3-p484
 ```
 Also relies on content in `.bashrc`.
 
