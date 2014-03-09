@@ -22,6 +22,8 @@ Install OpenJDK with `sudo apt-get install openjdk-7-jdk`.
 
 Download maven binary from [official website](http://maven.apache.org/download.cgi) and expand in `~/software`.
 
+Set `.m2/settings.xml` according to [Sonatype help](https://docs.sonatype.org/display/Repository/Sonatype+OSS+Maven+Repository+Usage+Guide) to publish artifacts.
+
 Relies on dotfile `.bashrc`.
 
 ## Firefox/Iceweasel aurora
@@ -86,6 +88,8 @@ nvm install 0.11
 nvm alias default 0.11
 ```
 Also relies on content in `.bashrc`.
+
+Run `npm adduser` to login to NPM.
 
 ## OpenSCAD
 
