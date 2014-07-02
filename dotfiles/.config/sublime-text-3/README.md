@@ -30,6 +30,11 @@ Mainly for dealing with ClearCase...
 * installed with package manager: `Package Control: Install Package` then `Toogle Read-Only` and finally restart
 * adds `Set Readonly` and `Set Writable` contextual menu entries when right-clicking in the editor
 
+### MultiEditUtils
+
+* [package homepage](https://sublime.wbond.net/packages/MultiEditUtils)
+* installed with package manager: `Package Control: Install Package` then `MultiEditUtils` and finally restart
+
 ### Sublime Linter (defunct)
 
 * [source repository](https://github.com/SublimeLinter/SublimeLinter)
