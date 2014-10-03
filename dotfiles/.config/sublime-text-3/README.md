@@ -40,3 +40,7 @@ Mainly for dealing with ClearCase...
 * install package `SublimeLinter-jshint` with package manager: `Package Control: Install Package` then `SublimeLinter` ([official website](http://www.sublimelinter.com/en/latest/))
 * install [jshint](http://www.jshint.com/docs/): `npm install -g jshint`
 * install package `SublimeLinter-jshint` with package manager: `Package Control: Install Package` then `SublimeLinter-jshint` ([repository](https://github.com/SublimeLinter/SublimeLinter-jshint))
+
+### Rust
+
+Install package `Rust` through package manager: `Package Control: Install Package` then `Rust` ([Official website](https://sublime.wbond.net/packages/Rust)).
