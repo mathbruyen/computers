@@ -47,9 +47,13 @@ Install package `Rust` through package manager: `Package Control: Install Packag
 
 ### Edit file via SFTP
 
+Installation:
+
 * [official website](http://wbond.net/sublime_packages/sftp)
 * install package `SublimeLinter-jshint` with package manager: `Package Control: Install Package` then `SFTP`
-* to synchronize a folder:
-** import folder to synchronize into Sublime's sidebar
-** right click on it -> SFTP/FTP -> Map to remote...
-** set `host`, `user`, `port`, `upload_on_save` and `ssh_key_file` in configuration file `sftp-config.json` created in the folder
+
+To synchronize a folder:
+
+1. import folder to synchronize into Sublime's sidebar
+2. right click on it -> SFTP/FTP -> Map to remote...
+3. set `host`, `user`, `port`, `upload_on_save` and `ssh_key_file` in configuration file `sftp-config.json` created in the folder
