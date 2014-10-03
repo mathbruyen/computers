@@ -35,7 +35,8 @@ Mainly for dealing with ClearCase...
 * [package homepage](https://sublime.wbond.net/packages/MultiEditUtils)
 * installed with package manager: `Package Control: Install Package` then `MultiEditUtils` and finally restart
 
-### Sublime Linter (defunct)
+### Sublime Linter with javascript support
 
-* [source repository](https://github.com/SublimeLinter/SublimeLinter)
-* installed with package manager: `Package Control: Install Package` then `SublimeLinter` and finally restart
+* install package `SublimeLinter-jshint` with package manager: `Package Control: Install Package` then `SublimeLinter` ([official website](http://www.sublimelinter.com/en/latest/))
+* install [jshint](http://www.jshint.com/docs/): `npm install -g jshint`
+* install package `SublimeLinter-jshint` with package manager: `Package Control: Install Package` then `SublimeLinter-jshint` ([repository](https://github.com/SublimeLinter/SublimeLinter-jshint))
