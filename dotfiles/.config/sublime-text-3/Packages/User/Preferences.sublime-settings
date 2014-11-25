@@ -1,13 +1,10 @@
 {
+	"color_scheme": "Packages/User/Seti (SL).tmTheme",
 	"default_line_ending": "LF",
-	"font_size": 10,
+	"font_size": 12,
 	"ignored_packages":
 	[
-		"Emmet",
-		"GitGutter",
-		"SublimeLinter",
-		"Vintage",
-		"Grunt"
+		"Vintage"
 	],
 	"rulers":
 	[
@@ -17,5 +14,6 @@
 	"show_encoding": true,
 	"show_line_endings": true,
 	"tab_size": 2,
+	"theme": "Seti.sublime-theme",
 	"translate_tabs_to_spaces": true
 }
