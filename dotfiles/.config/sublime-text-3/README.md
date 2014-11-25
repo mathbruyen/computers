@@ -6,16 +6,16 @@
 
 Installed via [standard install](https://sublime.wbond.net/installation), commands starts with `Package Control:` ([source](https://sublime.wbond.net/docs/usage)).
 
-### Emmet (ex Zen Coding)
+### Emmet 
 
 * [github repository](https://github.com/sergeche/emmet-sublime)
 * installed with package manager: `Package Control: Install Package` then `Emmet`, restart
 * type expression and type `CTRL + E` to expand
 
-### TernJS
+### Javascript
 
-* [website](http://ternjs.net/)
-* installed with package manager: `Package Control: Install Package` then `TernJS`
+* [TernJS](http://ternjs.net/) for code completion, installed with package manager: `Package Control: Install Package` then `TernJS`
+* [Java​Script​Next - ES6 Syntax](https://github.com/Benvie/JavaScriptNext.tmLanguage) for ES6 syntax highlighting, installed with package manager: `Package Control: Install Package` then `JavaScriptNext`
 
 ### Git Gutter
 
@@ -40,6 +40,10 @@ Mainly for dealing with ClearCase...
 * install package `SublimeLinter-jshint` with package manager: `Package Control: Install Package` then `SublimeLinter` ([official website](http://www.sublimelinter.com/en/latest/))
 * install [jshint](http://www.jshint.com/docs/): `npm install -g jshint`
 * install package `SublimeLinter-jshint` with package manager: `Package Control: Install Package` then `SublimeLinter-jshint` ([repository](https://github.com/SublimeLinter/SublimeLinter-jshint))
+
+### Seti UI
+
+Install package `Seti_UI` through package manager: `Package Control: Install Package` then `Seti_UI` ([Repository](https://github.com/ctf0/Seti_ST3)).
 
 ### Rust
 
