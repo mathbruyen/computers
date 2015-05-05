@@ -11,20 +11,14 @@ adduser mathieu sudo
 ```
 then reboot.
 
-`apt-get install kde-standard yakuake build-essential curl`
+`apt-get install kde-standard yakuake build-essential curl docker.io`
 
 Dotfiles:
 * `.bashrc`
 
 ## Maven
 
-Install OpenJDK with `sudo apt-get install openjdk-7-jdk`.
-
-Download maven binary from [official website](http://maven.apache.org/download.cgi) and expand in `~/software`.
-
-Set `.m2/settings.xml` according to [Sonatype help](https://docs.sonatype.org/display/Repository/Sonatype+OSS+Maven+Repository+Usage+Guide) to publish artifacts.
-
-Relies on dotfile `.bashrc`.
+Available through docker containers. Set `/home/dummy/.m2/settings.xml` in data container `mvn-cache` (using `docker run -it --rm --volumes-from mvn-cache -v `pwd`:/pwd -w /pwd -u dummy local/mvn-with-user /bin/bash` to log in) according to [Sonatype help](https://docs.sonatype.org/display/Repository/Sonatype+OSS+Maven+Repository+Usage+Guide) to publish artifacts.
 
 ## Firefox/Iceweasel aurora
 
@@ -77,16 +71,7 @@ Also relies on content in `.bashrc`.
 
 ## Node.js
 
-With [nvm](https://github.com/creationix/nvm):
-```
-git clone git://github.com/creationix/nvm.git ~/nvm
-source ~/.bashrc
-nvm install 0.11
-nvm alias default 0.11
-```
-Also relies on content in `.bashrc`.
-
-Run `npm adduser` to login to NPM.
+Available through docker containers.
 
 ## OpenSCAD
 
