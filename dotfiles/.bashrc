@@ -115,17 +115,17 @@ fi
 
 docker inspect mvn-cache > /dev/null
 if [ $? -ne 0 ]; then
-  source ~/.config/node-setup.sh
+  source ~/.config/java-setup.sh
 fi
 
 # Aliases for maven
-alias mvn="docker run -it --rm --volumes-from mvn-cache -v `pwd`:/pwd -w /pwd -u dummy local/mvn-with-user mvn"
-alias mvn-fresh="docker run -it --rm -v `pwd`:/pwd -w /pwd -u dummy local/mvn-with-user mvn"
+alias mvn="docker run -it --rm --volumes-from mvn-cache -v \`pwd\`:/pwd -w /pwd -u dummy local/mvn-with-user mvn"
+alias mvn-fresh="docker run -it --rm -v \`pwd\`:/pwd -w /pwd -u dummy local/mvn-with-user mvn"
 
 # Aliases for node and npm
-alias node="docker run -it --rm -v `pwd`:/pwd -w /pwd -u dummy local/node-with-user node"
-alias npm="docker run -it --rm --volumes-from npm-cache -v `pwd`:/pwd -w /pwd -u dummy local/node-with-user npm"
-alias npm-fresh="docker run -it --rm -v `pwd`:/pwd -w /pwd -u dummy local/node-with-user npm"
+alias node="docker run -it --rm -v \`pwd\`:/pwd -w /pwd -u dummy local/node-with-user node"
+alias npm="docker run -it --rm --volumes-from npm-cache -v \`pwd\`:/pwd -w /pwd -u dummy local/node-with-user npm"
+alias npm-fresh="docker run -it --rm -v \`pwd\`:/pwd -w /pwd -u dummy local/node-with-user npm"
 
 # enable rbenv
 export PATH="~/.rbenv/bin:$PATH"
