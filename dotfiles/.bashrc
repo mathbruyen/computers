@@ -106,8 +106,6 @@ fi
 
 source ~/.bash_profile
 
-DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
-
 docker inspect npm-cache > /dev/null
 if [ $? -ne 0 ]; then
   source ~/.config/node-setup.sh
