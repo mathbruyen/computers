@@ -1,14 +1,18 @@
 {
 	"auto_upgrade_last_run": null,
+	"in_process_packages":
+	[
+	],
 	"installed_packages":
 	[
 		"EditorConfig",
 		"Emmet",
 		"GitGutter",
 		"Grunt",
+		"JavaScriptNext - ES6 Syntax",
 		"Package Control",
-		"Pandoc (Markdown)",
 		"ReadonlyWritable",
-		"SublimeLinter"
+		"SublimeLinter",
+		"SublimeLinter-jshint"
 	]
 }

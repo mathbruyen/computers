@@ -1,11 +1,9 @@
 {
+	"color_scheme": "Packages/User/Monokai (SL).tmTheme",
 	"default_line_ending": "LF",
 	"font_size": 10,
 	"ignored_packages":
 	[
-		"Emmet",
-		"GitGutter",
-		"SublimeLinter",
 		"Vintage",
 		"Grunt"
 	],
