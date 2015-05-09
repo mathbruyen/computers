@@ -1,38 +1,39 @@
 # Aspire
 
-Debian unstable (Wheezy) amd64.
+Debian Jessie amd64.
 
-## Sudo
+## General
 
 As root:
 ```
+apt-get install sudo
 adduser mathieu sudo
 ```
 then reboot.
 
-## General
-
-`apt-get install kde-standard yakuake build-essential curl`
+`apt-get install kde-standard yakuake build-essential curl docker.io`
 
 Dotfiles:
 * `.bashrc`
 
 ## Maven
 
-Install OpenJDK with `sudo apt-get install openjdk-7-jdk`.
-
-Download maven binary from official website and expand in `~/software`.
-
-Relies on dotfile `.bashrc`.
+Available through docker containers. Set `/home/dummy/.m2/settings.xml` in data container `mvn-cache` (using `docker run -it --rm --volumes-from mvn-cache -v `pwd`:/pwd -w /pwd -u dummy local/mvn-with-user /bin/bash` to log in) according to [Sonatype help](https://docs.sonatype.org/display/Repository/Sonatype+OSS+Maven+Repository+Usage+Guide) to publish artifacts.
 
 ## Firefox/Iceweasel aurora
 
 [Source](http://mozilla.debian.net/)
 
+Set `/etc/apt/sources.list.d/mozilla.list` to
+```
+deb http://cdn.debian.net/debian unstable main
+deb http://mozilla.debian.net/ experimental iceweasel-aurora
+```
+and run
 ```
 apt-get install pkg-mozilla-archive-keyring
-echo "deb http://mozilla.debian.net/ experimental iceweasel-aurora" > /etc/apt/sources.list.d/mozilla.list
 apt-get update
+apt-get upgrade
 apt-get install -t experimental iceweasel
 ``` 
 
@@ -42,13 +43,9 @@ and setup Sync.
 
 `apt-get install ssh` with `.ssh/config` dotfile. Generate keys with `ssh-keygen -t rsa`.
 
-## Heroku
-
-[Toolbelt](https://toolbelt.heroku.com/) with identity file `id_heroku`.
-
 ## Sublime Text
 
-Extract Linux-64 archive from [official website](http://www.sublimetext.com/) in `~/software/sublime_text_3`, link `sublime_text` in `~/software/bin` (added to PATH in dotfile `.bashrc`) and link dotfiles from `.config/sublime-text-3`. Plugins listed at `.config/sublime-text-3/README.md`.
+Extract Linux-64 archive from [official website](http://www.sublimetext.com/3) in `~/software/sublime_text_3`, link `sublime_text` in `~/software/bin` (added to PATH in dotfile `.bashrc`) and link dotfiles from `.config/sublime-text-3`. Plugins listed at `.config/sublime-text-3/README.md`.
 
 ## Git
 
@@ -60,23 +57,21 @@ Relies on dotfile `.gitconfig`.
 
 With [rbenv](https://github.com/sstephenson/rbenv/):
 ```
-apt-get install libssl-dev libreadline-dev
+apt-get install autoconf bison libssl-dev libyaml-dev libreadline6 libreadline6-dev zlib1g zlib1g-dev patchutils
 git clone https://github.com/sstephenson/rbenv.git .rbenv
 git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-rbenv install 1.9.3-pXXX
+curl -fsSL https://github.com/ruby/ruby/commit/1e7a929c1d44d7a368fbe379211183ac6c972920.patch | filterdiff --strip=1 -i a/ext/openssl/ossl_ssl.c | rbenv install -p 1.9.3-p484
 rbenv rehash
+rbenv global 1.9.3-p484
 ```
 Also relies on content in `.bashrc`.
+
+* [Required packages](https://github.com/sstephenson/ruby-build/wiki#wiki-suggested-build-environment)
+* [OpenSSL patch](https://github.com/sstephenson/ruby-build/wiki#wiki-openssl-bindings-on-debian-80-jessie)
 
 ## Node.js
 
-With [nvm](https://github.com/creationix/nvm):
-```
-git clone git://github.com/creationix/nvm.git ~/nvm
-nvm install 0.10.0
-nvm alias default 0.10
-```
-Also relies on content in `.bashrc`.
+Available through docker containers.
 
 ## OpenSCAD
 

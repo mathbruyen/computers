@@ -1,6 +1,6 @@
 # AspireOne
 
-Debian unstable (Wheezy)
+Debian Jessie i386.
 
 ## General
 
@@ -33,3 +33,19 @@ nvm install 0.11
 nvm alias default 0.11
 ```
 Also relies on content in `.bashrc`.
+
+## Ruby
+
+With [rbenv](https://github.com/sstephenson/rbenv/):
+```
+apt-get install autoconf bison libssl-dev libyaml-dev libreadline6 libreadline6-dev zlib1g zlib1g-dev patchutils
+git clone https://github.com/sstephenson/rbenv.git .rbenv
+git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+curl -fsSL https://github.com/ruby/ruby/commit/1e7a929c1d44d7a368fbe379211183ac6c972920.patch | filterdiff --strip=1 -i a/ext/openssl/ossl_ssl.c | rbenv install -p 1.9.3-p484
+rbenv rehash
+rbenv global 1.9.3-p484
+```
+Also relies on content in `.bashrc`.
+
+* [Required packages](https://github.com/sstephenson/ruby-build/wiki#wiki-suggested-build-environment)
+* [OpenSSL patch](https://github.com/sstephenson/ruby-build/wiki#wiki-openssl-bindings-on-debian-80-jessie)

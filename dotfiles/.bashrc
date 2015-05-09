@@ -84,11 +84,6 @@ if [ -x /usr/bin/dircolors ]; then
     #alias egrep='egrep --color=auto'
 fi
 
-# some more ls aliases
-#alias ll='ls -l'
-#alias la='ls -A'
-#alias l='ls -CF'
-
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -110,3 +105,31 @@ if ! shopt -oq posix; then
 fi
 
 source ~/.bash_profile
+
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+docker inspect npm-cache > /dev/null
+if [ $? -ne 0 ]; then
+  source ~/.config/node-setup.sh
+fi
+
+docker inspect mvn-cache > /dev/null
+if [ $? -ne 0 ]; then
+  source ~/.config/node-setup.sh
+fi
+
+# Aliases for maven
+alias mvn="docker run -it --rm --volumes-from mvn-cache -v `pwd`:/pwd -w /pwd -u dummy local/mvn-with-user mvn"
+alias mvn-fresh="docker run -it --rm -v `pwd`:/pwd -w /pwd -u dummy local/mvn-with-user mvn"
+
+# Aliases for node and npm
+alias node="docker run -it --rm -v `pwd`:/pwd -w /pwd -u dummy local/node-with-user node"
+alias npm="docker run -it --rm --volumes-from npm-cache -v `pwd`:/pwd -w /pwd -u dummy local/node-with-user npm"
+alias npm-fresh="docker run -it --rm -v `pwd`:/pwd -w /pwd -u dummy local/node-with-user npm"
+
+# enable rbenv
+export PATH="~/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+# enable custom software
+export PATH="$PATH:~/software/bin"
