@@ -131,3 +131,5 @@ eval "$(rbenv init -)"
 
 # enable custom software
 export PATH="$PATH:~/software/bin"
+
+export EDITOR=vim
