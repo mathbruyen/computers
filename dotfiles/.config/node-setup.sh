@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Create a container with a user having the same id than the local one and rights to edit npm cache directory, create an image out of the container and delete it (this is were node version is chosen)
-docker run --name node-with-user node:0.12.2-slim /bin/bash -c "groupadd -f -g $(id -g) dummy && useradd -u $(id -u) -g dummy dummy && mkdir -p /home/dummy && chown -R dummy:dummy /home/dummy"
+docker run --name node-with-user node:0.12.2-slim /bin/bash -c "groupadd -f -g $(id -g) dummy && useradd -u $(id -u) -g dummy dummy && mkdir -p /home/dummy/.npm && chown -R dummy:dummy /home/dummy/.npm"
 docker commit node-with-user local/node-with-user
 docker rm node-with-user
 
