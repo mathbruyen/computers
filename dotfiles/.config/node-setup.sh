@@ -10,4 +10,4 @@ docker inspect npm-cache > /dev/null
 if [ $? -eq 0 ]; then
   docker rm npm-cache
 fi
-docker create -v /home/dummy --name npm-cache local/node-with-user
+docker create -v $HOME:/home/dummy -v /home/dummy/.npm --name npm-cache local/node-with-user

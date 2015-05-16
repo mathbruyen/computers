@@ -10,4 +10,4 @@ docker inspect mvn-cache > /dev/null
 if [ $? -eq 0 ]; then
   docker rm mvn-cache
 fi
-docker create -v /home/dummy --name mvn-cache local/mvn-with-user
+docker create -v $HOME:/home/dummy -v /home/dummy/.m2/repository --name mvn-cache local/mvn-with-user
