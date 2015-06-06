@@ -106,24 +106,30 @@ fi
 
 source ~/.bash_profile
 
-docker inspect npm-cache > /dev/null
-if [ $? -ne 0 ]; then
-  source ~/.config/node-setup.sh
-fi
-
+# Aliases for maven
 docker inspect mvn-cache > /dev/null
 if [ $? -ne 0 ]; then
   source ~/.config/java-setup.sh
 fi
-
-# Aliases for maven
 alias mvn="docker run -it --rm --volumes-from mvn-cache -v \`pwd\`:/pwd -w /pwd -u dummy local/mvn-with-user mvn"
 alias mvn-fresh="docker run -it --rm -v \`pwd\`:/pwd -w /pwd -u dummy local/mvn-with-user mvn"
 
 # Aliases for node and npm
+docker inspect npm-cache > /dev/null
+if [ $? -ne 0 ]; then
+  source ~/.config/node-setup.sh
+fi
 alias node="docker run -it --rm -v \`pwd\`:/pwd -w /pwd -u dummy local/node-with-user node"
 alias npm="docker run -it --rm --volumes-from npm-cache -v \`pwd\`:/pwd -w /pwd -u dummy local/node-with-user npm"
+alias npm-http="docker run -it --rm --volumes-from npm-cache -p 8080:8080 -v \`pwd\`:/pwd -w /pwd -u dummy local/node-with-user npm"
 alias npm-fresh="docker run -it --rm -v \`pwd\`:/pwd -w /pwd -u dummy local/node-with-user npm"
+
+# Alias for aws cli
+docker inspect aws > /dev/null
+if [ $? -ne 0 ]; then
+  source ~/.config/aws-setup.sh
+fi
+alias aws="docker run -it --rm --volumes-from aws -v \`pwd\`:/pwd -w /pwd -u dummy local/aws aws"
 
 # enable rbenv
 export PATH="~/.rbenv/bin:$PATH"
