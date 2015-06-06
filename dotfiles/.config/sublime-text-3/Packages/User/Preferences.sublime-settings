@@ -4,8 +4,8 @@
 	"font_size": 10,
 	"ignored_packages":
 	[
-		"Vintage",
-		"Grunt"
+		"Grunt",
+		"Vintage"
 	],
 	"rulers":
 	[
