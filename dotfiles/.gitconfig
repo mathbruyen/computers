@@ -5,3 +5,5 @@
 	email = code@mais-h.eu
 [push]
 	default = simple
+[alias]
+        cat = cat-file -p
