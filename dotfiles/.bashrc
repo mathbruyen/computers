@@ -119,10 +119,6 @@ docker inspect npm-cache > /dev/null
 if [ $? -ne 0 ]; then
   source ~/.config/node-setup.sh
 fi
-alias node="docker run -it --rm -v \`pwd\`:/pwd -w /pwd -u dummy local/node-with-user node"
-alias npm="docker run -it --rm --volumes-from npm-cache -v \`pwd\`:/pwd -w /pwd -u dummy local/node-with-user npm"
-alias npm-http="docker run -it --rm --volumes-from npm-cache -p 8080:8080 -v \`pwd\`:/pwd -w /pwd -u dummy local/node-with-user npm"
-alias npm-fresh="docker run -it --rm -v \`pwd\`:/pwd -w /pwd -u dummy local/node-with-user npm"
 
 # Alias for aws cli
 docker inspect aws > /dev/null
@@ -139,3 +135,5 @@ eval "$(rbenv init -)"
 export PATH="$PATH:~/software/bin"
 
 export EDITOR=vim
+
+if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then . ~/.nix-profile/etc/profile.d/nix.sh; fi
