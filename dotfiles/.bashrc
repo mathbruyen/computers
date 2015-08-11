@@ -114,12 +114,6 @@ fi
 alias mvn="docker run -it --rm --volumes-from mvn-cache -v \`pwd\`:/pwd -w /pwd -u dummy local/mvn-with-user mvn"
 alias mvn-fresh="docker run -it --rm -v \`pwd\`:/pwd -w /pwd -u dummy local/mvn-with-user mvn"
 
-# Aliases for node and npm
-docker inspect npm-cache > /dev/null
-if [ $? -ne 0 ]; then
-  source ~/.config/node-setup.sh
-fi
-
 # Alias for aws cli
 docker inspect aws > /dev/null
 if [ $? -ne 0 ]; then
