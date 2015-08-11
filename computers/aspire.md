@@ -18,13 +18,7 @@ Dotfiles:
 
 ## [Nix](http://nixos.org/nix/)
 
-Installation as a single user. Run (asks for root password to create `/nix` folder):
-
-```
-curl https://nixos.org/nix/install | sh
-```
-
-Remove added line in `.bash_profile` (already included in `.bashrc`).
+See [here](../nix).
 
 ## Maven
 
@@ -78,14 +72,6 @@ Also relies on content in `.bashrc`.
 
 * [Required packages](https://github.com/sstephenson/ruby-build/wiki#wiki-suggested-build-environment)
 * [OpenSSL patch](https://github.com/sstephenson/ruby-build/wiki#wiki-openssl-bindings-on-debian-80-jessie)
-
-## Node.js
-
-```
-nix-env -f nix/node/default.nix -i
-```
-
-TODO: do not install it and require projets to declare it in a *.nix file
 
 ## OpenSCAD
 
