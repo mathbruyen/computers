@@ -7,6 +7,8 @@ in rec {
 
   stdenv = pkgs.stdenv;
 
+  sublimetext = import sublime/default.nix { inherit stdenv fetchurl; };
+
   nodejs = import node/default.nix { inherit stdenv fetchurl; };
 
 }

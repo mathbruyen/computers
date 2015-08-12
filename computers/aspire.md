@@ -49,7 +49,9 @@ and setup Sync.
 
 ## Sublime Text
 
-Extract Linux-64 archive from [official website](http://www.sublimetext.com/3) in `~/software/sublime_text_3`, link `sublime_text` in `~/software/bin` (added to PATH in dotfile `.bashrc`) and link dotfiles from `.config/sublime-text-3`. Plugins listed at `.config/sublime-text-3/README.md`.
+Using [Nix](../nix): `nix-env -f nix/allpackages.nix -i sublimetext`
+
+Plugins listed on dedicated [dotfiles](../dotfiles/.config/sublime-text-3).
 
 ## Git
 
