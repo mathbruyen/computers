@@ -114,13 +114,6 @@ fi
 alias mvn="docker run -it --rm --volumes-from mvn-cache -v \`pwd\`:/pwd -w /pwd -u dummy local/mvn-with-user mvn"
 alias mvn-fresh="docker run -it --rm -v \`pwd\`:/pwd -w /pwd -u dummy local/mvn-with-user mvn"
 
-# Alias for aws cli
-docker inspect aws > /dev/null
-if [ $? -ne 0 ]; then
-  source ~/.config/aws-setup.sh
-fi
-alias aws="docker run -it --rm --volumes-from aws -v \`pwd\`:/pwd -w /pwd -u dummy local/aws aws"
-
 # enable rbenv
 export PATH="~/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
