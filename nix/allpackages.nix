@@ -9,9 +9,10 @@ in rec {
 
   stdenv = pkgs.stdenv;
 
-  sublimetext = import sublime/default.nix { inherit stdenv fetchurl; };
-
   nodejs = import node/default.nix { inherit stdenv fetchurl; };
+
+  sublimetext = import sublime/default.nix { inherit stdenv fetchurl; };
   awscli = import aws/default.nix { inherit pythonPackages fetchurl; };
+  kubernetes = import kubernetes/default.nix { inherit stdenv fetchurl; };
 
 }
