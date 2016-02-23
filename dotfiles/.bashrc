@@ -106,18 +106,6 @@ fi
 
 source ~/.bash_profile
 
-# Aliases for maven
-docker inspect mvn-cache > /dev/null
-if [ $? -ne 0 ]; then
-  source ~/.config/java-setup.sh
-fi
-alias mvn="docker run -it --rm --volumes-from mvn-cache -v \`pwd\`:/pwd -w /pwd -u dummy local/mvn-with-user mvn"
-alias mvn-fresh="docker run -it --rm -v \`pwd\`:/pwd -w /pwd -u dummy local/mvn-with-user mvn"
-
-# enable rbenv
-export PATH="~/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
 # enable custom software
 export PATH="$PATH:~/software/bin"
 
