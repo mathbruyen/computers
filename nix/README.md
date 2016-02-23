@@ -10,6 +10,14 @@ curl https://nixos.org/nix/install | sh
 
 Remove added line in `.bash_profile` (already included in [`.bashrc`](../dotfiles/.bashrc)). Symlink this folder to `~/.nix-local`. All included packages are in [allpackages.nix](allpackages.nix).
 
+## Package install
+
+```
+nix-env -f ~/.nix-local/allpackages.nix --install foo
+nix-env -f ~/.nix-local/allpackages.nix --upgrade foo
+```
+
+
 ## Local development
 
 Projects needing packages from these definitions should have a `default.nix` like (here depending on [Node.js](https://nodejs.org/)):
