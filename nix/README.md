@@ -17,7 +17,6 @@ nix-env -f ~/.nix-local/allpackages.nix --install foo
 nix-env -f ~/.nix-local/allpackages.nix --upgrade foo
 ```
 
-
 ## Local development
 
 Projects needing packages from these definitions should have a `default.nix` like (here depending on [Node.js](https://nodejs.org/)):
@@ -33,3 +32,7 @@ pkgs.stdenv.mkDerivation rec {
 ```
 
 And run `nix-shell` from the project repository to get a working environment.
+
+## Docker usage (Google Cloud Shell)
+
+[Here](nix-builder)
