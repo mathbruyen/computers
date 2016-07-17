@@ -11,7 +11,7 @@ adduser mathieu sudo
 ```
 then reboot.
 
-`apt-get install kde-standard yakuake build-essential curl docker.io`
+`apt-get install kde-standard yakuake build-essential curl docker.io ntp`
 
 Dotfiles:
 * `.bashrc`
