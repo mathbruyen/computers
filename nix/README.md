@@ -8,13 +8,18 @@ Install Nix as a single user: run (asks for root password to create `/nix` folde
 curl https://nixos.org/nix/install | sh
 ```
 
-Remove added line in `.bash_profile` (already included in [`.bashrc`](../dotfiles/.bashrc)). Symlink this folder to `~/.nix-local`. All included packages are in [allpackages.nix](allpackages.nix).
+Remove added line in `.bash_profile` (already included in [`.bashrc`](../dotfiles/.bashrc)). Symlink `.nixpkgs` dotfile folder in home directory.
 
-## Package install
+## Package management
 
 ```
-nix-env -f ~/.nix-local/allpackages.nix --install foo
-nix-env -f ~/.nix-local/allpackages.nix --upgrade foo
+nix-channel --update
+
+nix-env --install foo
+nix-env --upgrade foo
+
+nix-env --delete-generations old
+nix-collect-garbage
 ```
 
 ## Local development
@@ -22,16 +27,16 @@ nix-env -f ~/.nix-local/allpackages.nix --upgrade foo
 Projects needing packages from these definitions should have a `default.nix` like (here depending on [Node.js](https://nodejs.org/)):
 
 ```
-{ pkgs ? import ~/.nix-local/allpackages.nix {} }:
+{ pkgs ? import <nixpkgs> {} }:
 
 pkgs.stdenv.mkDerivation rec {
   name = "dev";
-  buildInputs = [ pkgs.nodejs ];
-  src = ./.;
+  buildInputs = [ pkgs.nodejs-6_x ];
+  src = ./empty;
 }
 ```
 
-And run `nix-shell` from the project repository to get a working environment.
+And run `nix-shell` from the project repository to get a working environment. Setting `src` to a folder with stable content reduces time to build the environment.
 
 ## Docker usage (Google Cloud Shell)
 

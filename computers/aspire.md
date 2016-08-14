@@ -49,9 +49,9 @@ and setup Sync.
 
 ## Sublime Text
 
-Using [Nix](../nix): `nix-env -f nix/allpackages.nix -i sublimetext`
+Using [Nix](../nix): `nix-env -i sublimetext3`
 
-Plugins listed on dedicated [dotfiles](../dotfiles/.config/sublime-text-3).
+Plugins listed on dedicated [dotfiles](../dotfiles/.config/sublime-text-3). Requires `allowUnfree`.
 
 ## [AWS CLI](http://aws.amazon.com/documentation/cli/)
 
@@ -59,7 +59,7 @@ Using [Nix](../nix): `nix-env -f nix/allpackages.nix -i awscli`
 
 ## Git
 
-`apt-get install git`
+`nix-env --install git`
 
 Relies on dotfile `.gitconfig`.
 
