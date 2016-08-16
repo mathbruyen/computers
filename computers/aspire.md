@@ -24,24 +24,9 @@ See [here](../nix).
 
 Available through docker containers. Set `/home/dummy/.m2/settings.xml` in data container `mvn-cache` (using `docker run -it --rm --volumes-from mvn-cache -v `pwd`:/pwd -w /pwd -u dummy local/mvn-with-user /bin/bash` to log in) according to [Sonatype help](https://docs.sonatype.org/display/Repository/Sonatype+OSS+Maven+Repository+Usage+Guide) to publish artifacts.
 
-## Firefox/Iceweasel aurora
+## Firefox (nightly)
 
-[Source](http://mozilla.debian.net/)
-
-Set `/etc/apt/sources.list.d/mozilla.list` to
-```
-deb http://cdn.debian.net/debian unstable main
-deb http://mozilla.debian.net/ experimental iceweasel-aurora
-```
-and run
-```
-apt-get install pkg-mozilla-archive-keyring
-apt-get update
-apt-get upgrade
-apt-get install -t experimental iceweasel
-``` 
-
-and setup Sync.
+`nix-env --install firefox` and setup Sync.
 
 ## SSH
 
