@@ -48,6 +48,22 @@ Using [Nix](../nix): `nix-env -f nix/allpackages.nix -i awscli`
 
 Relies on dotfile `.gitconfig`.
 
+
+## Gcloud and Kubernetes
+
+```bash
+nix-env --install kubernetes google-cloud-sdk`
+gcloud init
+gcloud config set container/cluster ownservices
+# get config username
+kubectl config view
+# get master auth password
+gcloud container clusters describe ownservices
+kubectl config set-credentials CONFIG_USERNAME --username=admin --password=PASSWORD
+```
+
+* display dashboard: `kubectl proxy` and open [dashboard](http://localhost:8001/api/v1/proxy/namespaces/kube-system/services/kubernetes-dashboard)
+
 ## Ruby
 
 With [rbenv](https://github.com/sstephenson/rbenv/):
