@@ -1,7 +1,7 @@
 {
 	"color_scheme": "Packages/User/Monokai (SL).tmTheme",
 	"default_line_ending": "LF",
-	"font_size": 10,
+	"font_face": "Droid Sans Mono",
 	"ignored_packages":
 	[
 		"Grunt",
